@@ -9,7 +9,7 @@ b = tf.Variable(tf.zeros([10]))
 sess.run(tf.initialize_all_variables())
 y = tf.nn.softmax(tf.matmul(x,W) + b)
 y = tf.nn.softmax(tf.matmul(x,W) + b)
-cross_entropy = -tf.reduce_sum(y_*tf.log(y))
+cross_entropy = tf.reduce_sum((y_ - y) * (y_ - y))
 train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
 for i in range(1000):
     batch = mnist.train.next_batch(50)
