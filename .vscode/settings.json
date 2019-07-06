@@ -1,0 +1,5 @@
+{
+    "python.autoComplete.extraPaths": [
+        "C:/Users/pc/Anaconda3new/pkgs" ],
+    "python.pythonPath": "C:\\Users\\pc\\Anaconda3new\\envs\\tensorflow\\python.exe"
+}
